@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="342.0" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="359.0" spacing="10.0">
+         <children>
+            <Label text="Username:" />
+            <TextField fx:id="fldUsername" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="329.0" spacing="10.0">
+         <children>
+            <Label text="Password: " />
+            <PasswordField fx:id="fldPassword" />
+         </children>
+      </HBox>
+      <Label fx:id="lblMessage" textFill="RED" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnSignIn" mnemonicParsing="false" onMouseClicked="#signInClicked" text="Sign In" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="39.0" prefWidth="329.0">
+         <children>
+            <Label onMouseClicked="#linkClicked" text="No account? Click Here!" textFill="#1b89ff" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" top="5.0" />
+   </padding>
+</VBox>
